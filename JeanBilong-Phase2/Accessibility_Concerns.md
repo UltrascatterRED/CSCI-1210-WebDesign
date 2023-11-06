@@ -1,4 +1,4 @@
-# Accessibility Considerations for Website Personas
+# Accessibility Considerations for the Website
 
 This document outlines specific usability concerns for our personas and the resolutions to address those concerns, ensuring our website is accessible and user-friendly for all audiences.
 
