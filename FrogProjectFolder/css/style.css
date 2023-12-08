@@ -1,0 +1,80 @@
+/* style.css: This will be modified later */
+:root {
+  --frog-dark-green: #006a4e; /* We will adjust these colors later*/
+  --frog-medium-green: #4db6ac;
+  --frog-light-green: #80cbc4;
+  --frog-pale-green: #b2dfdb;
+  --frog-very-pale-green: #e0f2f1;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--frog-very-pale-green);
+  color: #333;
+}
+
+header {
+  background-color: var(--frog-dark-green);
+  color: white;
+  padding: 10px 15px;
+  text-align: left;
+}
+nav{
+  background-color: #006a4e;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 15px;
+}
+
+img {
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  max-width: 100%; /* Makes image responsive */
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2.header{
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6; /* Spacing for paragraph */
+}
+
+footer {
+  background-color: var(--frog-dark-green);
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+footer a {
+  color: var(--frog-very-pale-green);
+  text-decoration: none;
+}
+
+footer p {
+  margin: 5px; /* Spacing for footer content */
+}
