@@ -1,6 +1,7 @@
-/* style.css: This will be modified later */
+/* Combined CSS */
+
 :root {
-  --frog-dark-green: #006a4e; /* We will adjust these colors later*/
+  --frog-dark-green: #006a4e;
   --frog-medium-green: #4db6ac;
   --frog-light-green: #80cbc4;
   --frog-pale-green: #b2dfdb;
@@ -15,15 +16,30 @@ body {
   color: #333;
 }
 
+header,
+nav,
+article,
+footer {
+  width: 900px;
+  margin: auto;
+}
+
 header {
   background-color: var(--frog-dark-green);
   color: white;
   padding: 10px 15px;
   text-align: left;
+  height: 190px;
 }
-nav{
-  background-color: #006a4e;
+
+nav {
+  background-color: var(--frog-dark-green);
+  height: 3em;
+  padding: 0;
+  border-bottom: 1px solid #99d4be;
+  margin-top: 0;
 }
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -34,9 +50,28 @@ nav li {
   margin-right: 20px;
 }
 
-nav a {
+nav a,
+nav a:link,
+nav a:visited {
   text-decoration: none;
   color: white;
+  display: block;
+  width: 75px;
+  text-align: center;
+  margin-right: 5px;
+  float: left;
+  padding: 3px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: rgba(0, 62, 50, 1);
+}
+
+nav a:hover,
+nav a:active {
+  box-sizing: border-box;
+  background-color: rgba(0, 208, 167, 1);
+  color: rgba(39, 2, 65, 1);
+  border: 1px solid #fff;
 }
 
 main {
@@ -45,22 +80,23 @@ main {
 
 img {
   display: block;
-  margin: 0 auto; /* Centers the image */
-  max-width: 100%; /* Makes image responsive */
-  height: auto;
+  margin: 10px 15px;
+  height: 150px;
+  width: 200px;
 }
 
-h1 {
-  text-align: center;
+img.frogfact {
+  float: left;
 }
 
-h2.header{
-  text-align: center;
+img.logo {
+  float: left;
+  height: 200px;
+  width: 300px;
 }
 
-p {
-  text-align: justify;
-  line-height: 1.6; /* Spacing for paragraph */
+.clearBoth {
+  clear: both;
 }
 
 footer {
@@ -68,13 +104,58 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 15px;
+  clear: both;
+  line-height: 2em;
 }
 
-footer a {
-  color: var(--frog-very-pale-green);
-  text-decoration: none;
+h1,
+h2 {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  border-bottom: 2px solid #4db6ac;
+  color: #006a4e;
 }
 
-footer p {
-  margin: 5px; /* Spacing for footer content */
+header h1,
+header h2 {
+  border-width: 0;
+  color: white;
 }
+
+article {
+  box-sizing: border-box;
+  border: 1px solid rgba(39, 2, 65, 1);
+  color: rgba(0, 62, 50, 1);
+  padding: 15px;
+}
+
+.cite {
+  display: block;
+  width: 400px;
+  float: right;
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 10px 100px 20px 0;
+}
+.frog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.frog-grid figure {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden; /* Ensures that the image does not overflow its container */
+}
+
+.frog-grid img {
+  width: 77%; /* Ensures image is in the grid of the item */
+  height: cover; /* Initially set to cover to maintain aspect ratio */
+  object-fit: cover; /* Ensures image covers the area */
+  object-position: center; /* Centers the image within the grid item */
+}
+
+/* Additional styles can be added below as needed */
