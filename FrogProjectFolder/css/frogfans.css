@@ -1,123 +1,142 @@
-/*
-	Author:			
-	Assignment:		GroupProject
-	Date:					12/2/2023
-	*/
+/* Combined CSS */
 
-body {
-	font-family: 'Antic', sans-serif;
-	font-size: 1.2em;
-	background-color:rgb(137, 205, 184);
-	color: rgba( 39,  2, 65,1) ;
+:root {
+  --frog-dark-green: #006a4e;
+  --frog-medium-green: #4db6ac;
+  --frog-light-green: #80cbc4;
+  --frog-pale-green: #b2dfdb;
+  --frog-very-pale-green: #e0f2f1;
 }
 
-header, nav, article, footer {
-	width: 900px;
-	margin: auto;
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--frog-very-pale-green);
+  color: #333;
+}
+
+header,
+nav,
+article,
+footer {
+  width: 900px;
+  margin: auto;
 }
 
 header {
-	height: 190px;
-	background-color: rgba(0, 149, 104);
-	color:rgba( 97, 38,  0,1) ;
-	padding: 25px 0;
+  background-color: var(--frog-dark-green);
+  color: white;
+  padding: 10px 15px;
+  text-align: left;
+  height: 190px;
 }
 
 nav {
-	height: 3em;
-	padding: 0;
-	background: rgba(252,158,107);
-	border-bottom: 1px solid color#99d4be;
-	margin-top: 0;
+  background-color: var(--frog-dark-green);
+  height: 3em;
+  padding: 0;
+  border-bottom: 1px solid #99d4be;
+  margin-top: 0;
 }
 
-nav a {
-	display: block;
-	width: 75px;
-	text-align: center;
-	margin-right: 5px;
-	float: left;
-	padding: 3px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-nav a:link, nav a:visited {
-	background-color:rgba(  0, 62, 50,1) ;
-	color:rgb(217, 176, 246)  ;
+nav li {
+  display: inline;
+  margin-right: 20px;
 }
 
-nav a:hover, nav a:active {
-	box-sizing: border-box;
-	background-color:rgba(  0,208,167,1)  ;
-	color: rgba( 39,  2, 65,1);
-	border: 1px solid /*color here*/;
+nav a,
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 75px;
+  text-align: center;
+  margin-right: 5px;
+  float: left;
+  padding: 3px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: rgba(0, 62, 50, 1);
 }
 
-a {
-	text-decoration: none;
-	color:rgb(255, 89, 0) ;
+nav a:hover,
+nav a:active {
+  box-sizing: border-box;
+  background-color: rgba(0, 208, 167, 1);
+  color: rgba(39, 2, 65, 1);
+  border: 1px solid #fff;
+}
+
+main {
+  padding: 15px;
 }
 
 img {
-	display:block
-	margin: 10 15px;
-	height: 150px;
-	width: 200px;
+  display: block;
+  margin: 10px 15px;
+  height: 150px;
+  width: 200px;
 }
 
-img.frogfact{
-	float:left
+img.frogfact {
+  float: left;
 }
 
-img.logo{
-	float: left;
-	height: 200px;
-	width: 300px;
+img.logo {
+  float: left;
+  height: 200px;
+  width: 300px;
 }
 
 .clearBoth {
-	clear: both;
+  clear: both;
 }
 
 footer {
-	clear: both;
-	line-height: 2em;
-	margin: 0 auto;
-	background-color: rgba(  0, 62, 50,1);
-	color:white ;
+  background-color: var(--frog-dark-green);
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  clear: both;
+  line-height: 2em;
 }
 
-h1, h2 {
-	text-align:center;
-	width: 75%;
-	margin: auto;
-	border-bottom: 2px solid rgba(0,0,200,.7);
-	color:rgb(49, 200, 72) ;
+h1,
+h2 {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  border-bottom: 2px solid #4db6ac;
+  color: #006a4e;
 }
 
-header h1, header h2 {
-	border-width: 0;
-	color:rgba(  0, 62, 50,1);
+header h1,
+header h2 {
+  border-width: 0;
+  color: white;
 }
 
 article {
-	box-sizing: border-box;
-	border: 1px solid rgba( 39,  2, 65,1);
-	color: rgba(  0, 62, 50,1);
-	padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid rgba(39, 2, 65, 1);
+  color: rgba(0, 62, 50, 1);
+  padding: 15px;
 }
 
-
-/* Enter your rules above this one */
 .cite {
-	display: block;
-	width: 400px;
-	float: right;
-	font-size: .8em;
-	font-style: italic;
-	margin: 10px 100px 20px 0;
+  display: block;
+  width: 400px;
+  float: right;
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 10px 100px 20px 0;
 }
 
-
-
+/* Additional styles can be added below as needed */
