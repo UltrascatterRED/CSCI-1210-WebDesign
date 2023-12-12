@@ -104,6 +104,8 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   clear: both;
   line-height: 2em;
 }
@@ -159,3 +161,49 @@ article {
 }
 
 /* Additional styles can be added below as needed */
+
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+.merch-grid figure {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden; /* Ensures that the image does not overflow its container */
+}
+.merch-grid img {
+  width: 77%; /* Ensures image is in the grid of the item */
+  height: cover; /* Initially set to cover to maintain aspect ratio */
+  object-fit: cover; /* Ensures image covers the area */
+  object-position: center; /* Centers the image within the grid item */
+}
+
+#frogCEO {
+  height: 300px;
+  width: auto;
+  padding: 0px;
+  float: right;
+  border: 1px solid #505f3d;
+}
+.form-block {
+  margin: 0;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  padding: 5px;
+  padding-bottom: 10px;
+  max-width: 100%;
+}
+#form {
+  display:block;
+  background-color: #9db87d;
+  border: 1px solid #505f3d;
+  border-radius: 1rem;
+  padding: 10px
+}
+input {
+  display: flex;
+  width: 40%;
+}
